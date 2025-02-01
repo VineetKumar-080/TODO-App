@@ -1,0 +1,35 @@
+<!-- <html>
+    <body>
+        <input type="text">
+        <button onclick="addToDo()">ADD TODO</button>
+    </body>
+
+    <script>
+        let ctr = 1;
+
+        function deleteTodo(index) {
+            const element = document.getElementById("todo-" + index);
+            if (element) {
+                element.remove(); // Modern alternative to removeChild
+            }
+        }
+
+        function addToDo() {
+            const inputEl = document.querySelector("input");
+            const value = inputEl.value;
+
+            if (!value.trim()) return; // Prevent adding empty todos
+
+            const newDivEl = document.createElement("div");
+            newDivEl.setAttribute("id", "todo-" + ctr);
+
+            // Corrected button string interpolation
+            newDivEl.innerHTML = `<div>${value}</div>
+            <button onclick="deleteTodo(${ctr})">Delete</button>`;
+
+            document.body.appendChild(newDivEl);
+            ctr++;
+            inputEl.value = ""; // Clear input after adding
+        }
+    </script>
+</html> -->
